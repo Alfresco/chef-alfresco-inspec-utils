@@ -1,7 +1,7 @@
-control 'Java Installation' do
+control 'Node Json File existance' do
   impact 0.7
-  title 'Java Installatio'
-  desc 'Checks that Java have been correctly installed'
+  title 'Node Json File existance'
+  desc 'node.json file should exist'
 
   describe file('/tmp/node.json') do
     it { should be_file }
